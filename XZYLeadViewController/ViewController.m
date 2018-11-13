@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    XZYLeadScrollView *leadScr=[[XZYLeadScrollView alloc] initLeadScrollViewWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) dataArray:@[@"",@"",@"",@""] delegate:self];
+    XZYLeadScrollView *leadScr = [[XZYLeadScrollView alloc] initLeadScrollViewWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) dataArray:@[@"",@"",@"",@""] delegate:self];
     
     [self.view addSubview:leadScr];
 }
@@ -32,7 +32,7 @@
 
 #pragma mark - LeadScrollViewDelegate
 
--(void)leadScrollViewActGoToMain
+- (void)leadScrollViewActGoToMain
 {
 //    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:true] forKey:@"firstRun"];
 //    [[NSUserDefaults standardUserDefaults] synchronize];

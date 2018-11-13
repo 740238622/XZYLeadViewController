@@ -35,7 +35,7 @@
     return self;
 }
 
--(void)initSubviewsWithFrame:(CGRect)frame
+- (void)initSubviewsWithFrame:(CGRect)frame
 {
     CGFloat width = frame.size.width;
     CGFloat height = frame.size.height;
@@ -60,7 +60,6 @@
         
         if (i == sourceArr.count - 1) {
             imageview.userInteractionEnabled = YES;
-//            UIButton *btn = [MyUtil buttonPhotoAlignment:nil hilPhoto:nil rect:CGRectMake((width-140)/2, height-70, 140, 30) title:@"" select:nil Tag:0 View:imageview textColor:White Size:[UIFont systemFontOfSize:20]];
             UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
             btn.frame = CGRectMake((width - 140)/2, height - 70, 140, 30);
             
